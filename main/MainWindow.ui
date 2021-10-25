@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>680</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="table">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>450</width>
+      <height>400</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>40</y>
+      <width>200</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Добавить:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="change">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>100</y>
+      <width>200</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Изменить:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="detailed">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>160</y>
+      <width>200</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Подробнее:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delete_2">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>220</y>
+      <width>200</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Удалить:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="change_price">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>280</y>
+      <width>200</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Изменить цену:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="name">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>460</y>
+      <width>120</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Название:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="price">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>500</y>
+      <width>120</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Цена за 1 шт.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="numbers">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>540</y>
+      <width>120</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Количество:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="total">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>580</y>
+      <width>120</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Итого:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="line_name">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>460</y>
+      <width>300</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="line_price">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>500</y>
+      <width>300</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="line_numbers">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>540</y>
+      <width>300</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="line_total">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>580</y>
+      <width>300</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>-50</y>
+      <width>41</width>
+      <height>731</height>
+     </rect>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>440</y>
+      <width>520</width>
+      <height>5</height>
+     </rect>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
