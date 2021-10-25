@@ -6,18 +6,19 @@ con = sqlite3.connect("products.db")
 cur = con.cursor()
 
 
-def add(*inf):
-    items = list(inf)
-    a = ["'" + i + "'" for i in items]
-    cur.execute(f"INSERT INTO products VALUES({', '.join(a)})")
-
-    res = cur.execute("""SELECT * FROM products""").fetchall()
-    return ID + 1
+def add():
+    insert = """INSERT INTO products VALUES (0, 'demo-test', 10, 10, 'hehe','None')"""
+    res = cur.execute(insert).fetchall()
+    print(res)
 
 
-ID = add("Meat", "100", "5", "Amazing", "None")
-print(ID)
-ID = add("Meat", "100", "5", "Amazing", "None")
-print(ID)
+def get(id):
+    select = f"""SELECT (title, price, number) FROM products WHERE ID = {id}"""
+    inf = cur.execute(select).fetchall()
+    return inf
+
+
+add()
+print(get(0))
 
 con.close()
