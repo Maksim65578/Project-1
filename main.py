@@ -4,6 +4,7 @@ from PyQt5.QtWidgets import QMainWindow, QApplication, QTableWidget
 from Design.Add import Add
 from Design.Detailed import Detailed
 from Design.Change import Change
+from database import data
 
 
 class MainWindow(QMainWindow):
@@ -40,4 +41,3 @@ if __name__ == '__main__':
     ex = MainWindow()
     ex.show()
     sys.exit(app.exec())
-
