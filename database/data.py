@@ -1,12 +1,17 @@
 import sqlite3
 import os
 
-con = sqlite3.connect("products.db")
+global con, cur
 
-cur = con.cursor()
+
+def open():
+    global con, cur
+    con = sqlite3.connect("database/products.db")
+    cur = con.cursor()
 
 
 def add(*inf):
+    open()
     print(inf)
     insert = """INSERT INTO
      products (title, price, number, descryption, picture)
@@ -15,15 +20,20 @@ def add(*inf):
      """
     cur.execute(insert, inf)
     con.commit()
+    close()
 
 
-def get(id):
-    select = f"""SELECT title, price, number FROM products WHERE ID = {id}"""
+def get():
+    open()
+    select = """SELECT title, price, number FROM products"""
     inf = cur.execute(select).fetchall()
+    close()
+    print(inf)
     return list(inf)
 
 
 def change(*inf):
+    open()
     new_inf = list(inf[1:])
     new_inf.append(inf[0])
     data = tuple(new_inf)
@@ -37,6 +47,8 @@ def change(*inf):
     WHERE ID = ?"""
     cur.execute(update, data).fetchall()
     con.commit()
+    close()
 
 
-con.close()
+def close():
+    con.close()

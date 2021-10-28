@@ -6,3 +6,8 @@ class Detailed(QWidget):
     def __init__(self):
         super().__init__()
         uic.loadUi("Design/Detailed.ui", self)
+
+        self.close.clicked.connect(self.closing)
+
+    def closing(self):
+        self.close()
