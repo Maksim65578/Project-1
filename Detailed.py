@@ -1,4 +1,4 @@
-from  PyQt5 import uic
+from PyQt5 import uic
 from PyQt5.QtWidgets import QWidget
 
 
@@ -7,7 +7,7 @@ class Detailed(QWidget):
         super().__init__()
         uic.loadUi("Design/Detailed.ui", self)
 
-        self.close.clicked.connect(self.closing)
+        self.close_form.clicked.connect(self.closing)
 
     def closing(self):
         self.close()

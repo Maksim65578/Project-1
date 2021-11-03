@@ -7,7 +7,10 @@ class Change(QWidget):
         super().__init__()
         uic.loadUi("Design/Change.ui", self)
 
-        self.close.clicked.connect(self.close_form)
+        self.close_form.clicked.connect(self.closing)
 
-    def close_form(self):
+    def show_info(self):
+        self.name.setText(self.name_info)
+
+    def closing(self):
         self.close()

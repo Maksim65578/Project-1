@@ -160,6 +160,11 @@
       <height>25</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
    </widget>
    <widget class="QLineEdit" name="line_price">
     <property name="geometry">
@@ -170,8 +175,13 @@
       <height>25</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
    </widget>
-   <widget class="QLineEdit" name="line_numbers">
+   <widget class="QLineEdit" name="line_number">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -179,6 +189,11 @@
       <width>300</width>
       <height>25</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
     </property>
    </widget>
    <widget class="QLineEdit" name="line_total">
@@ -189,6 +204,11 @@
       <width>300</width>
       <height>25</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
     </property>
    </widget>
    <widget class="Line" name="line">

@@ -28,8 +28,15 @@ def get():
     select = """SELECT title, price, number FROM products"""
     inf = cur.execute(select).fetchall()
     close()
-    print(inf)
     return list(inf)
+
+
+def get_row(row):
+    open()
+    select = """SELECT title, price, number FROM products"""
+    inf = cur.execute(select).fetchall()
+    close()
+    return inf
 
 
 def change(*inf):
@@ -43,7 +50,6 @@ def change(*inf):
     price = ?,
     number = ?,
     descryption = ?,
-    picture = ?
     WHERE ID = ?"""
     cur.execute(update, data).fetchall()
     con.commit()
